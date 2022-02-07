@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This custom setting is to store chat buttons and its related EPM ID and language data</description>
+    <enableFeeds>false</enableFeeds>
+    <label>ICS AVM ChatButton EPM and Lang Map</label>
+    <visibility>Public</visibility>
+</CustomObject>

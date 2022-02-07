@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This custom settings can be used for exception handling for APIGEE integration purposes</description>
+    <enableFeeds>false</enableFeeds>
+    <label>ICS_APIGEE_Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>
