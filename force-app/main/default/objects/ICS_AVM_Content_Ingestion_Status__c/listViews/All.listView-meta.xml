@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>ICS_AVM_Knowledge_Article__c</columns>
+    <columns>ICS_AVM_Sync_Date_Time__c</columns>
+    <columns>ICS_AVM_Reason_For_Status__c</columns>
+    <columns>ICS_AVM_Sync_Status__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

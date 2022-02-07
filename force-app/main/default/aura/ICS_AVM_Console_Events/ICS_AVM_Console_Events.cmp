@@ -1,0 +1,28 @@
+<!--
+Name        : ICS_AVM_Console_Events
+Description : This component is created to catch events from live agent chat
+US          : US199552
+Author      : Popcornapps Inc.
+version     : 1.0 
+Date        : 3/22/2021 
+--> 
+<aura:component implements="flexipage:availableForAllPageTypes,lightning:backgroundUtilityItem" controller="ICS_AVM_Live_Chat_Agent_Controller" access="global" description="Conversation toolkit api sample">
+    
+    <aura:attribute name="isWorkAccepted" type= "boolean" default="false" />
+    <aura:attribute name="onAgentSendMessages" type="List"  default=""/>
+    
+     <lightning:workspaceAPI aura:id="workspace"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Console integration APIs for Live Agent.  --> 
+    <lightning:conversationToolkitAPI aura:id="conversationKit" />
+    <aura:handler event="lightning:conversationAgentSend" action="{! c.onAgentSend}" />
+    <aura:handler event="lightning:conversationNewMessage" action="{!c.onNewMessage}"/>
+    <aura:handler event="lightning:conversationChatEnded" action="{!c.onChatEnded}" />
+    
+    <!-- Events for Omni-Channel  --> 
+    <lightning:omniToolkitAPI aura:id="omniToolkit" />  
+    <aura:handler event="lightning:omniChannelWorkAccepted" action="{! c.onWorkAccepted }"/>
+   <!--  <aura:handler event="lightning:omniChannelWorkClosed" action="{! c.onWorkClosed }"/>--> 
+    
+</aura:component>
